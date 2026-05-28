@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="inner">
-      <div class="brand">Habit Challenge</div>
+      <span class="brand">Habit Challenge</span>
       <nav>
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
@@ -24,8 +24,8 @@
       <h1>Terms of Use</h1>
       <p>Please review these terms carefully before using the Habit Challenge application.</p>
       <div class="meta">
-        <span>📅 Effective: May 24, 2026</span>
-        <span>⚖️ Legal Terms</span>
+        <span>Effective: May 24, 2026</span>
+        <span>Developer: mfv.apps</span>
       </div>
     </section>
 
@@ -114,8 +114,23 @@
     </section>
   </main>
 
+  </main>
+
   <footer>
-    © 2026 mfv.apps · <a href="mailto:mfv.apps@gmail.com">mfv.apps@gmail.com</a>
+    <span>© 2026 mfv.apps</span>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="privacy-policy.html">Privacy</a>
+      <a href="contact.html">Contact</a>
+      <a href="mailto:mfv.apps@gmail.com">mfv.apps@gmail.com</a>
+    </div>
   </footer>
+
+  <button id="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
+  <script>
+    const btn = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 400));
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
 </body>
 </html>
