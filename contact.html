@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us — Habit Challenge: Win the Day</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="brand">mfv.apps</div>
+      <nav>
+        <a href="index.html">Home / Ana Sayfa</a>
+        <a href="contact.html">Contact / İletişim</a>
+        <a href="privacy-policy.html">Privacy / Gizlilik</a>
+        <a href="terms-of-use.html">Terms / Koşullar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Get in Touch<br><span class="accent-text">Bize Ulaşın</span></h1>
+      <p class="muted">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      <p class="muted">Sizden haber almaktan seviniriz. Bize bir mesaj gönderin ve en kısa sürede yanıt vereceğiz.</p>
+    </section>
+
+    <div class="contact-container">
+      <!-- Contact Form Section -->
+      <section class="form-section">
+        <h2>Send us a Message / Mesaj Gönderin</h2>
+        
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <label for="name">Full Name / Tam Ad <span class="required">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="Your name / Adınız">
+            <span class="error-message" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address / E-posta Adresi <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject / Konu <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a subject / Konu seçin</option>
+              <option value="support">Support / Destek</option>
+              <option value="feedback">Feedback / Geri Bildirim</option>
+              <option value="bug">Bug Report / Hata Bildir</option>
+              <option value="partnership">Partnership / İşbirliği</option>
+              <option value="other">Other / Diğer</option>
+            </select>
+            <span class="error-message" id="subjectError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Mesaj <span class="required">*</span></label>
+            <textarea id="message" name="message" required placeholder="Your message... / Mesajınız..." rows="6"></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree that my contact details will be used to respond to my message. / Mesajıma yanıt vermek için iletişim bilgilerimin kullanılmasını kabul ediyorum. <span class="required">*</span></label>
+            <span class="error-message" id="consentError"></span>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message / Mesaj Gönder</button>
+          <span class="success-message" id="successMessage"></span>
+        </form>
+      </section>
+
+      <!-- Contact Information Section -->
+      <section class="info-section">
+        <h2>Contact Information / İletişim Bilgileri</h2>
+        
+        <div class="info-card">
+          <div class="info-icon">✉️</div>
+          <div class="info-content">
+            <h3>Email / E-posta</h3>
+            <p><a href="mailto:mfv.apps@gmail.com">mfv.apps@gmail.com</a></p>
+            <p class="muted">We typically respond within 24 hours / Genellikle 24 saat içinde yanıt veririz</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <div class="info-content">
+            <h3>Response Time / Yanıt Süresi</h3>
+            <p>Monday to Friday: 09:00 - 18:00 UTC</p>
+            <p class="muted">Weekend responses may be delayed / Weekend yanıtları gecikebilir</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📋</div>
+          <div class="info-content">
+            <h3>Support Categories / Destek Kategorileri</h3>
+            <ul class="no-bullets">
+              <li>🛠️ Technical Support / Teknik Destek</li>
+              <li>💡 Feature Requests / Özellik İstekleri</li>
+              <li>📱 Account Issues / Hesap Sorunları</li>
+              <li>🤝 Business Inquiries / İşletme Sorguları</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="notice">
+          <strong>Privacy Notice / Gizlilik Bildirimi:</strong> Your information will be handled according to our <a href="privacy-policy.html">Privacy Policy</a>. Bilgileriniz <a href="privacy-policy.html">Gizlilik Politikası</a>'mıza göre işlenecektir.
+        </div>
+      </section>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions / Sık Sorulan Sorular</h2>
+      
+      <div class="faq-container">
+        <details class="faq-item">
+          <summary>How quickly will I receive a response? / Ne kadar hızlı yanıt alacağım?</summary>
+          <div class="faq-answer">
+            <p>We aim to respond to all inquiries within 24 business hours. Priority support may be available for premium users.</p>
+            <p>Tüm soruşturmalara 24 iş saati içinde yanıt vermeyi amaçlıyoruz. Premium kullanıcılar için öncelikli destek kullanılabilir olabilir.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What information should I include? / Hangi bilgileri içermeli?</summary>
+          <div class="faq-answer">
+            <p>Please provide as much detail as possible including your issue, screenshots if applicable, and any error messages. The more information you provide, the faster we can help you.</p>
+            <p>Sorununuz, varsa ekran görüntüleri ve hata mesajları dahil olmak üzere mümkün olduğunca çok ayrıntı sağlayınız.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Can I report a security issue? / Güvenlik sorununu bildirebilir miyim?</summary>
+          <div class="faq-answer">
+            <p>Yes, please report security issues directly to mfv.apps@gmail.com with the subject "SECURITY:" to ensure urgent handling.</p>
+            <p>Evet, "GÜVENLİK:" konusu ile mfv.apps@gmail.com adresine doğrudan bildirin.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Do you offer phone support? / Telefon desteği sunuyor musunuz?</summary>
+          <div class="faq-answer">
+            <p>Currently, we support inquiries via email and this contact form. For urgent matters, please clearly mark your message as urgent.</p>
+            <p>Şu anda, e-posta ve bu iletişim formu aracılığıyla destek sunuyoruz.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 mfv.apps · <a href="mailto:mfv.apps@gmail.com">mfv.apps@gmail.com</a>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>
